@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import LayoutBorder from "../layouts/LayoutBorder";
-import { CSSTransition } from 'react-transition-group';
 
 interface Props {
 }
