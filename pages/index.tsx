@@ -20,7 +20,7 @@ export default function Home() {
         <div
             className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-br from-darkPurple to-purpledarky">
             <Head>
-                <title>My page title</title>
+                <title>Dahu Finance | Home</title>
             </Head>
             <Nav/>
             <main>
