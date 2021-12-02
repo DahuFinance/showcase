@@ -1,4 +1,4 @@
-import {ButtonExchange} from '../components/ButtonExchange'
+import {ButtonDark} from './ButtonDark'
 import Info from '../pages/info'
 import Link from 'next/Link'
 
@@ -12,7 +12,7 @@ const Navbar =() => {
                 <Link href="/info">
                     <a className="text-white text-ml hover:border-b-2 transition-all ease-in-out">Info</a>
                 </Link>
-            <ButtonExchange title="Enter App"/>
+            <ButtonDark title="Enter App"/>
 
         </nav>
     );

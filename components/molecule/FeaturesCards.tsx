@@ -13,16 +13,16 @@ export default function FeaturesCards({
                                  }: Props) {
 
     return (
-        <div className="w-80 h-96 bg-red-200 flex flex-col rounded-xl overflow-hidden shadow-halo mb-4">
+        <div className="w-80 h-96 bg-red-200 flex flex-col rounded-sm overflow-hidden shadow-halo hover:scale-105 transition ease-in-out duration-200 mb-4 md:hover:scale-110 md:transition md:ease-in-out md:duration-200">
             <div
                 className="w-full flex-1 bg-cover"
                 style={{backgroundImage: `url('${image}')`}}
             />
-            <div className="flex flex-col w-full p-6 space-y-3 bg-darkPurple">
-        <span className="text-white font-semibold">
+            <div className="flex flex-col w-full p-6 space-y-3 bg-darkBlue">
+        <span className="text-purple font-semibold text-xl tracking-widest">
           {title}
         </span>
-                <span className="text-white">
+                <span className="text-white tracking-wide">
           {message}
         </span>
             </div>

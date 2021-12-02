@@ -18,7 +18,7 @@ import Team from "../components/organique/Team";
 export default function Home() {
     return (
         <div
-            className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-br from-darkPurple to-purpledarky">
+            className="flex flex-col min-h-screen py-2 bg-gradient-to-br from-darkBlue via-purpledarky to-darkBlue">
             <Head>
                 <title>Dahu Finance | Home</title>
             </Head>

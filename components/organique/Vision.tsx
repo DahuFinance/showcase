@@ -1,9 +1,10 @@
 import {TitleBig} from "../TitleBig";
 import LayoutBorder from "../layouts/LayoutBorder";
+import {SubtitleDark} from "../SubtitleDark";
 
 const Vision=() => {
     return(
-        <div className="m-auto">
+        <div className=" md:h-screen">
             <LayoutBorder>
             <TitleBig title="The best is yet to come !"/>
             <div className="flex flex-col md:flex-row">
