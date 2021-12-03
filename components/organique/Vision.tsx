@@ -4,7 +4,7 @@ import {SubtitleDark} from "../SubtitleDark";
 
 const Vision=() => {
     return(
-        <div className=" md:h-screen">
+        <div className=" md:h-screen md:min-h-screen">
             <LayoutBorder>
             <TitleBig title="The best is yet to come !"/>
             <div className="flex flex-col md:flex-row">

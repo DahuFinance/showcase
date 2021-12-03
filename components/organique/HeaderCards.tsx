@@ -23,7 +23,6 @@ const HeaderCards = () => {
 
                     </div>
                 </div>
-                <Minicard/>
             </LayoutBorder>
         </div>
 
