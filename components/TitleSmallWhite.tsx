@@ -4,6 +4,6 @@ interface Props {
 
 export const TitleSmallWhite = (props: Props) => {
     return (
-        <h1 className="text-center text-2xl md:text-4xl font-bold tracking-wide text-white m-4">{props.title}</h1>
+        <h1 className="text-2xl md:text-4xl font-bold tracking-wide text-white ml-10">{props.title}</h1>
     )
 }

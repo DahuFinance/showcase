@@ -5,11 +5,11 @@ import {SubtitleDark} from "../SubtitleDark";
 
 const Team = () => {
     return (
-        <div className={"bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple md:h-screen"}>
+        <div className={"flex bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple md:h-screen"}>
             <LayoutBorder>
                     <TitleBig title="We start with 3 "/>
                     <SubtitleDark title={"Join us!"}/>
-                    <div className="flex flex-col md:flex-col items-center lg:flex-row">
+                    <div className="flex flex-col md:flex-col items-center lg:flex-row align-center">
                         <img src="Team.svg" alt="team" className="w-4/6"></img>
 
                         <div className={" m-auto w-4/6 pb-6 "}>

@@ -13,7 +13,7 @@ export default function FeaturesCards({
                                  }: Props) {
 
     return (
-        <div className="w-80 h-96 bg-red-200 flex flex-col rounded-sm overflow-hidden shadow-halo hover:scale-105 transition ease-in-out duration-200 mb-4 md:hover:scale-110 md:transition md:ease-in-out md:duration-200">
+        <div className="w-80 h-96 bg-red-200 flex flex-col rounded-sm overflow-hidden shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 mb-4 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200">
             <div
                 className="w-full flex-1 bg-cover"
                 style={{backgroundImage: `url('${image}')`}}
