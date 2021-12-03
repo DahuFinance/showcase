@@ -7,12 +7,12 @@ import {Button} from "../Button";
 const Features = () => {
     return (
 
-        <div className={"bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple md:h-screen"}>
+        <div className={"bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple lg:h-screen lg:min-h-screen"}>
             <LayoutBorder>
                 <div className={"lg:pt-20 md:pt-14 py-6"}>
                     <TitleSmall title={"Features"}/>
                     <SubtitleDark title={"This is just the beginning… "}/>
-                    <div className="md:my-10 flex flex-col items-center md:flex-row justify-around align-middle">
+                    <div className="md:my-10 flex flex-col items-center lg:flex-row justify-around align-middle">
                         <FeaturesCards title={"Swap"} message={"Swap your token easily"}
                                        image={'/swap.svg'}></FeaturesCards>
                         <FeaturesCards title={"Farm"} message={"Swap your token easily"}
