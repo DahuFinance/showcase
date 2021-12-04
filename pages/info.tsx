@@ -9,14 +9,14 @@ import OurProgram from "../components/molecule/OurProgram/OurProgram";
 export default function Info () {
     return (
         <div
-            className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-br from-darkPurple to-purple">
+            className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple">
             <Head>
                 <title>Dahu Finance | Info</title>
             </Head>
             <Nav/>
             <main>
-                <FeaturesInfo/>
                 <OurProgram/>
+                <FeaturesInfo/>
                 <Charity/>
                 <Token/>
             </main>

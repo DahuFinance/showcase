@@ -18,57 +18,59 @@ export default function FeaturesInfo(props :Props){
                 <div className={"flex  flex-col md:flex-row"}>
                     <div className={"flex md:flex-col "}>
                          <span>
-                        Lock your tokens on our platform for the period of your choice.
-                        The longer you lock them, the more XDAHU you get from the platform. These XDAHUs will allow you to touch the platform's fees and vote for its development.
+                        Stake your tokens in our eligible farming pools to earn XDAHUs.
+Thanks to auto-compounding (accrued interest calculated separately from your invested capital), Dahu Finance gives you the possibility to automatically reinvest your earned interests.
+
                     </span>
-                        <span className='lg:mt-5 italic block'>
-                        Example : You can vote lock 1,000 CRV for a year to have a 250 veCRV weight. Each CRV locked for four years is equal to 1 veCRV.
-                    </span>
+
                     </div>
-                    <img src="Team.svg" alt="team" className=" hide w-2/6"></img>
+                    <img src="farming-icone.svg" alt="team" className="h-28"></img>
                 </div>
             )
         },
         {
             title: 'SWAPPING',
             content: (
-                <>
-                    <span>
-                        Lock your tokens on our platform for the period of your choice.
-                        The longer you lock them, the more XDAHU you get from the platform. These XDAHUs will allow you to touch the platform's fees and vote for its development.
+                <div className={"flex  flex-col md:flex-row"}>
+                    <div className={"flex md:flex-col "}>
+                         <span>
+                        Exchange your tokens immediately for minimal fees.
+Transaction fees: 0.3% (0.25% to the token providers and 0.05% to our stakers).
+
                     </span>
-                    <span className='mt-5 italic block'>
-                        Example : You can vote lock 1,000 CRV for a year to have a 250 veCRV weight. Each CRV locked for four years is equal to 1 veCRV.
-                    </span>
-                </>
+
+                    </div>
+                    <img src="swapping-icone.svg" alt="team" className=" h-28"></img>
+                </div>
             )
         },
         {
             title: 'STAKING with Dahu club',
             content: (
-                <>
-                    <span>
-                        Lock your tokens on our platform for the period of your choice.
-                        The longer you lock them, the more XDAHU you get from the platform. These XDAHUs will allow you to touch the platform's fees and vote for its development.
+                <div className={"flex  flex-col md:flex-row"}>
+                    <div className={"flex md:flex-col "}>
+                         <span>
+                        Lock your tokens on our platform for the period of time of your choice.
+The longer you lock them, the more XDAHU you get from the platform. These XDAHUs will allow you to earn the platform's fees and vote for its development.
                     </span>
-                    <span className='mt-5 italic block'>
-                        Example : You can vote lock 1,000 CRV for a year to have a 250 veCRV weight. Each CRV locked for four years is equal to 1 veCRV.
-                    </span>
-                </>
+                    </div>
+                    <img src="staking-icone.svg" alt="team" className="  h-28"></img>
+                </div>
             )
         },
         {
             title: 'CHARITY',
             content: (
-                <>
-                    <span>
-                        Lock your tokens on our platform for the period of your choice.
-                        The longer you lock them, the more XDAHU you get from the platform. These XDAHUs will allow you to touch the platform's fees and vote for its development.
+                <div className={"flex  flex-col md:flex-row"}>
+                    <div className={"flex md:flex-col "}>
+                         <span>
+                        Dahu Finance offers to its users a fund dedicated to solidarity. In order to bring solutions to social and environmental issues, deposit the tokens of your choosing and we will transform and donate them to our partner charities.
+To spur our community into action, we will introduce a leaderboard and our top donors will be rewarded with XDAHUs at the standard price.
+
                     </span>
-                    <span className='mt-5 italic block'>
-                        Example : You can vote lock 1,000 CRV for a year to have a 250 veCRV weight. Each CRV locked for four years is equal to 1 veCRV.
-                    </span>
-                </>
+                    </div>
+                    <img src="charity-icone.svg" alt="team" className=" h-28"></img>
+                </div>
             )
         }
     ]
@@ -76,7 +78,7 @@ export default function FeaturesInfo(props :Props){
 
     const displayItem = (item, index) => (
         <div key={index} className='border-t-2 p-4 cursor-pointer text-white transition-all duration-300' onClick={() => setOpenIndex(index)}>
-            <span className='font-bold tracking-widest text-2xl'>
+            <span className='font-bold text-clearPurple tracking-widest text-2xl'>
                 {item.title}
             </span>
             <div className={index !== openedIndex ? 'opacity-0 h-0' : '' + ' transition-all duration-1000 mt-2 leading-8'}>
@@ -86,8 +88,10 @@ export default function FeaturesInfo(props :Props){
     )
 
     return(
-        <div className={"flex bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple md:h-screen py-8 md:py-14 lg:py-28"}>
-        <LayoutBorder>
+
+        <div className={"flex bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple md:h-screen"}>
+            <div className="flex-col m-auto bg-bg1 bg-cover md:h-screen border-bt-2 align-middle">
+            <LayoutBorder>
             <div className={"flex flex-col align-center items-center"}>
                 <TitleSmall title={"Launching Features"}/>
                 <SubtitleDark title={"Discover..."}/>
@@ -97,6 +101,7 @@ export default function FeaturesInfo(props :Props){
             </div>
 
         </LayoutBorder>
+        </div>
         </div>
     );
 }

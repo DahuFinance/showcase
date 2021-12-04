@@ -9,6 +9,7 @@ module.exports = {
             },
             colors: {
                 skyBlue: '#95FAFF',
+                clearPurple: '#8B8AFF',
                 purple: '#5352ED',
                 darkPurple: '#260E44',
                 darkBlue: '#17072a',
@@ -25,6 +26,8 @@ module.exports = {
                 'dahu': "url('/dahu-launch.svg')",
                 'dahuMobile': "url('/dahu-launch-mobile.png')",
                 'stars':"url('/background.png')",
+                'bg1':"url('/bg1.svg')",
+                'bg2':"url('/bg2.svg')",
 
             }
         },
