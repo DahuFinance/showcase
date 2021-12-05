@@ -1,19 +1,13 @@
 import Head from 'next/head'
 import Nav from '../components/Navbar'
 import Footer from '../components/Footer'
-import {TitleBig} from '../components/TitleBig'
-import {TitleSmall} from '../components/TitleSmall'
-import {TitleSmallWhite} from '../components/TitleSmallWhite'
-import {TextLeft} from '../components/TextLeft'
-import LayoutColonneTwo from "../components/LayoutColonneTwo";
 
 import HeaderCards from "../components/organique/HeaderCards";
-import Minicard from "../components/molecule/Minicard";
 import Vision from "../components/organique/Vision";
 import Features from "../components/organique/Features";
-import Token from "../components/organique/Token";
+import Token from "../components/sections/Token";
 import Team from "../components/organique/Team";
-import InfoMinicards from "../components/organique/InfoMinicards";
+import Minicard from "../components/molecule/Minicard";
 
 
 export default function Home() {
@@ -26,7 +20,7 @@ export default function Home() {
             <Nav/>
             <main>
                 <HeaderCards/>
-                <InfoMinicards/>
+                <Minicard/>
                 <Vision/>
                 <Features/>
                 <Token/>

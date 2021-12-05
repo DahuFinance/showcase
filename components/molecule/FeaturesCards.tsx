@@ -6,14 +6,16 @@ interface Props {
     image: string;
 }
 
-export default function FeaturesCards({
-                                     title,
-                                     message,
-                                     image
-                                 }: Props) {
-
+export default function FeaturesCards(
+    {
+        title,
+        message,
+        image
+    }: Props
+) {
     return (
-        <div className="w-64 h-72 md:w-80 md:h-96  mb-4 bg-red-200 flex flex-col rounded-sm overflow-hidden shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200">
+        <div
+            className="m-4 w-64 h-72 md:w-80 md:h-96  mb-4 bg-red-200 flex flex-col rounded-xl overflow-hidden shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200">
             <div
                 className="w-full flex-1 bg-cover"
                 style={{backgroundImage: `url('${image}')`}}

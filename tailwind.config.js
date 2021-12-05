@@ -1,6 +1,15 @@
 module.exports = {
     mode: 'jit',
-    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    purge: {
+        content: [
+            './pages/**/*.{js,ts,jsx,tsx}',
+            './components/**/*.{js,ts,jsx,tsx}'
+        ],
+        safelist: [
+            'from-skyBlue',
+            'from-purple'
+        ]
+    },
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
