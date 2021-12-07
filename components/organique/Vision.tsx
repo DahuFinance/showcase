@@ -7,7 +7,7 @@ const Vision=() => {
             title={'The best is yet to come !'}
             titleColor={'purple'}
         >
-            <LayoutBorder className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2'}>
+            <LayoutBorder className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 md:px-40'}>
                 <div className="flex flex-col items-center">
                     <img src="/cake2.svg" alt="cake" className= "w-3/6"></img>
                     <div className="m-6 text-white text-center leading-8 ">We aim to become an all-in-one solution to provide you a set of innovative services around decentralized finance.

@@ -6,6 +6,9 @@ import Charity from "../../components/sections/Charity";
 import FeaturesInfo from "../../components/sections/FeaturesInfo";
 import OurProgram from "../../components/molecule/OurProgram/OurProgram";
 import {SectionWithTitles} from "../../components/layouts/SectionWithTitles";
+import TokensInfo from "../../components/sections/TokensInfo";
+import {HeaderImage} from "../../components/layouts/HeaderImage";
+import Allocation from "../../components/organique/Allocation";
 
 export default function Index () {
     return (
@@ -17,17 +20,18 @@ export default function Index () {
             </Head>
             <Nav/>
             <main>
+                <HeaderImage/>
                 <SectionWithTitles
                     title={'Our Program'}
-                    bodyClassName={'bg-bg2 bg-cover'}
+                    subtitle={"Check the program !"}
+                    bodyClassName={'bg-bg1 bg-cover'}
                 >
                     <OurProgram/>
                 </SectionWithTitles>
-
-
                 <FeaturesInfo/>
                 <Charity/>
-                <Token/>
+                <TokensInfo/>
+                <Allocation/>
             </main>
             <Footer/>
         </div>

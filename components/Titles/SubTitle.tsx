@@ -13,7 +13,7 @@ export const SubTitle = (props: Props) => {
     } = props;
 
     return (
-        <h2 className={`text-xl md:text-4xl md:text-3xl font-bold text-${color} tracking-wide text-center`}>
+        <h2 className={`text-xl md:text-5xl md:text-3xl font-bold text-${color} tracking-wide text-center`}>
             {title}
         </h2>
     )

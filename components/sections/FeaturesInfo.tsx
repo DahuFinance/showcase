@@ -79,7 +79,7 @@ Thanks to auto-compounding (accrued interest calculated separately from your inv
         <SectionWithTitles
             title={'Launching Features'}
             subtitle={'Discover..'}
-            bodyClassName={'bg-bg1 bg-cover'}
+            bodyClassName={'bg-bg2 bg-cover'}
         >
             <LayoutBorder>
                 <div className='border-b-2 max-w-[60rem]'>

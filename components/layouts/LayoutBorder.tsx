@@ -11,7 +11,7 @@ export default function LayoutBorder(props: Props) {
     } = props
 
     return (
-        <div className={className + ' px-4 md:px-40 w-full '}>
+        <div className={className + ' px-4 md:px-50 w-full '}>
             {children}
         </div>
     )

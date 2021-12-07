@@ -15,7 +15,7 @@ export default function FeaturesCards(
 ) {
     return (
         <div
-            className="m-4 w-64 h-72 md:w-80 md:h-96  mb-4 bg-red-200 flex flex-col rounded-xl overflow-hidden shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200">
+            className="m-4 w-64 h-72 md:w-72 md:h-80  mb-4 bg-red-200 flex flex-col rounded-xl overflow-hidden shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200">
             <div
                 className="w-full flex-1 bg-cover"
                 style={{backgroundImage: `url('${image}')`}}
