@@ -1,4 +1,4 @@
-import {BigTitle, BigTitleColor} from "../Titles/BigTitle";
+import {Title, BigTitleColor} from "../Titles/Title";
 import {SubTitle, SubTitleColor} from "../Titles/SubTitle";
 
 interface Props {
@@ -31,7 +31,7 @@ export function SectionWithTitles(props: Props) {
         <div className={className + ''}>
             <div className={bodyClassName + ' p-4 min-h-screen flex flex-col justify-center items-center h-full'}>
                 <div className='text-center pb-10'>
-                    { typeof title === 'string' ? <BigTitle color={titleColor} title={title}/> : title}
+                    { typeof title === 'string' ? <Title color={titleColor} title={title}/> : title}
                     {
                         subtitle && (
                             <>

@@ -9,11 +9,10 @@ import Token from "../components/sections/Token";
 import Team from "../components/organique/Team";
 import Minicard from "../components/molecule/Minicard";
 
-
 export default function Home() {
     return (
         <div
-            className="flex flex-col min-h-screen py-2 bg-gradient-to-br from-darkBlue to-purple lg:from-darkBlue lg:via-purpledarky lg:to-darkBlue">
+            className="flex flex-col min-h-screen bg-gradient-to-br from-darkBlue to-purple lg:from-darkBlue lg:via-purpledarky lg:to-darkBlue">
             <Head>
                 <title>Dahu Finance | Home</title>
             </Head>

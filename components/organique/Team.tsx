@@ -9,8 +9,8 @@ const Team = () => {
             titleColor={'purple'}
             subtitle={'Join us!'}
         >
-            <LayoutBorder className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:items-center space-y-5 lg:space-y-0 md:px-40">
-                <img src="Team.svg" alt="team" ></img>
+            <LayoutBorder className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:items-center space-y-5 lg:space-y-0">
+                <img src="Team.svg" alt="team"/>
                 <div className={"text-white tracking-wide text-center text-xl leading-8"}>
                     The team is composed of three founding members, 3 developers passionate about blockchain
                     and decentralized finance.

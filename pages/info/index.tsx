@@ -13,7 +13,7 @@ import Allocation from "../../components/organique/Allocation";
 export default function Index () {
     return (
         <div
-            className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple"
+            className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple"
         >
             <Head>
                 <title>Dahu Finance | Info</title>

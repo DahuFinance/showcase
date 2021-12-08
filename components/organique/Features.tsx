@@ -10,7 +10,7 @@ const Features = () => {
             title={'Features'}
             subtitle={'This is just the beginning… '}
         >
-            <LayoutBorder>
+            <LayoutBorder className={'md:px-0'}>
                 <div className={'-m-4 flex flex-col flex-wrap justify-center items-center lg:flex-row'}>
                     <FeaturesCards
                         title={"Swap"}
