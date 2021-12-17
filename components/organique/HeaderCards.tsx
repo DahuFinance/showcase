@@ -7,8 +7,8 @@ const HeaderCards = () => {
         <div className="bg-dahuMobile md:bg-dahu bg-cover md:h-screen">
             <LayoutBorder>
                 <div className="flex flex-col mt-6 ">
-                    <img src="/dahu-finance.svg" alt="Logo" className="md:h-28 h-20 self-center lg:self-start ml-10"/>
-                    <div className={"flex flex-col lg:flex-row  text-white"}>
+                    <img src="/dahu-finance.svg" alt="Logo" className="md:h-28 h-20 self-center lg:self-start"/>
+                    <div className={"flex flex-col lg:flex-row text-white"}>
                         <div className={"self-center"}>
                             <TitleSmallWhite title="Everyone can catch a DAHU"/>
                         </div>

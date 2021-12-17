@@ -2,7 +2,7 @@
 const Footer = () => {
     const currentYear = new Date().getFullYear()
     return (
-        <div className="w-full p-4 flex flex-col md:flex-row justify-center md:justify-around items-center space-y-5 md:space-y-0 md:space-x-5 bg-darkBlue text-white">
+        <div className="w-full p-4 pb-20 sm:pb-4 flex flex-col md:flex-row justify-center md:justify-around items-center space-y-5 md:space-y-0 md:space-x-5 bg-darkBlue text-white">
             <div className={'flex space-x-5 md:space-x-10'}>
                 <a target='_blank' href='#' className={'flex space-x-2 items-center self-start'}>
                     <img src={"/medium.svg"} alt={"icone-twitter"} className={"h-10 w-10 shadow-halo transition hover:scale-105 ease-in-out"}/>

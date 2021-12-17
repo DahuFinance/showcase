@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Nav from "../../components/Navbar";
-import Token from "../../components/sections/Token";
+import Nav from "../../components/Header";
 import Footer from "../../components/Footer";
 import Charity from "../../components/sections/Charity";
 import FeaturesInfo from "../../components/sections/FeaturesInfo";
 import OurProgram from "../../components/molecule/OurProgram/OurProgram";
-import {SectionWithTitles} from "../../components/layouts/SectionWithTitles";
 import TokensInfo from "../../components/sections/TokensInfo";
 import {HeaderImage} from "../../components/layouts/HeaderImage";
 import Allocation from "../../components/organique/Allocation";
@@ -21,13 +19,7 @@ export default function Index () {
             <Nav/>
             <main>
                 <HeaderImage/>
-                <SectionWithTitles
-                    title={'Our Program'}
-                    subtitle={"Check the program !"}
-                    bodyClassName={'bg-bg1 bg-cover'}
-                >
-                    <OurProgram/>
-                </SectionWithTitles>
+                <OurProgram/>
                 <FeaturesInfo/>
                 <Charity/>
                 <TokensInfo/>

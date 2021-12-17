@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../components/Navbar'
+import Nav from '../components/Header'
 import Footer from '../components/Footer'
 
 import HeaderCards from "../components/organique/HeaderCards";

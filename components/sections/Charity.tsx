@@ -18,11 +18,15 @@ const Charity = () => {
                 <div className={"lg:col-span-2"}>
                     <Title size='small' title={"THE BEST PART OF YOURSELF!"}/>
                     <div className={"font-medium tracking-wide text-gray-300 text-lg leading-8"}>
-                        The Dahu Finance team is setting up a fund dedicated to solidarity.
-                        Come and deposit any token of your choice, we will take care of transforming them and
-                        donating them to partner charities.
-                        Each week we will reward the most generous donor among you, check the top donor table to
-                        see in which position you are.
+                        <div>
+                            The Dahu Finance team is setting up a fund dedicated to solidarity.
+                            Come and deposit any token of your choice, we will take care of
+                            transforming them and donating them to partner charities.
+                        </div>
+                        <div className='mt-5'>
+                            Each week we will reward the most generous donor among you,
+                            check the top donor table to see in which position you are.
+                        </div>
                     </div>
                 </div>
             </LayoutBorder>

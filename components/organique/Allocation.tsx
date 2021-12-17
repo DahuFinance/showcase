@@ -13,14 +13,28 @@ const Allocation=() => {
         >
             <LayoutBorder>
                 <div className="grid grid-cols-none lg:grid-cols-2 grid-rows-2 lg:grid-rows-none place-content-center place-items-center lg:gap-5">
-                    <img src="/allocation.svg" alt="cake"/>
+                    <img src="/allocation.png" alt="cake"/>
 
                     <div>
-                        <Title size='small' title={"TON TIRE ICI!"}/>
-                        <span className="font-medium tracking-wide text-gray-300 leading-8 text-lg ">
-                            We aim to become an all-in-one solution to provide you a set of innovative services around decentralized finance.
-                            Our platform aims to be a long-term investment for you, by developing Dahu's staking from the beginning you capitalize on the future by receiving a part of the platform's fees.
-                        </span>
+                        <Title size='extra-small' title={" Dahu Finance plans its token distribution as follows:"}/>
+                        <div className="font-medium tracking-wide text-gray-300 leading-8 text-lg ">
+                            <ul className='list-disc mt-5 space-y-5'>
+                                <li>
+                                    15% for the foundation with which the salaries of our full-time team on the project are included, but also the salaries of our contributors, such as translators and moderators.
+                                    Also planned for is the budget allocated to upcoming security audits.
+                                </li>
+                                <li>
+                                    To launch Dahu Finance, we are planning a 5% airdrop budget over
+                                    a one-month period from launch.
+                                    Unrecovered airdrops will be sent back to the community through a
+                                    fund and governed by the community.
+                                </li>
+                                <li>
+                                    Regarding the 80% of tokens planned for liquidity mining and bonds,
+                                    we address them to all of you, our future contributors!
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>

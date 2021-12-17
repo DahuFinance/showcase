@@ -1,4 +1,4 @@
-import FeaturesCards from "../molecule/FeaturesCards";
+import FeatureCard from "../molecule/FeatureCard";
 import LayoutBorder from "../layouts/LayoutBorder";
 import {Button} from "../Button";
 import {SectionWithTitles} from "../layouts/SectionWithTitles";
@@ -12,29 +12,30 @@ const Features = () => {
         >
             <LayoutBorder className={'md:px-0'}>
                 <div className={'-m-4 flex flex-col flex-wrap justify-center items-center lg:flex-row'}>
-                    <FeaturesCards
+                    <FeatureCard
                         title={"Swap"}
-                        message={"Swap your token easily"}
+                        href='/info#swap'
+                        message={"Instantly exchange your cryptocurrencies for other currencies"}
                         image={'/swap.svg'}
                     />
-                    <FeaturesCards
+                    <FeatureCard
                         title={"Farm"}
-                        message={"Swap your token easily"}
+                        href='/info#farm'
+                        message={"Deposit your tokens in our farming pool and earn rewards."}
                         image={'/farm.svg'}
                     />
-                    <FeaturesCards
+                    <FeatureCard
                         title={"Stake"}
-                        message={"Swap your token easily"}
+                        href='/info#stake'
+                        message={"Join the Dahu club and recover part of the platform’s fees."}
                         image={'/club.svg'}
                     />
-                    <FeaturesCards
+                    <FeatureCard
                         title={"Donate"}
-                        message={"Swap your token easily"}
+                        href='/info#donate'
+                        message={"Because it is not always a personal matter, join the solidarity fund!"}
                         image={'/charity.svg'}
                     />
-                </div>
-                <div className={"flex justify-center md:justify-end mt-5"}>
-                    <Button title={"more"}/>
                 </div>
             </LayoutBorder>
         </SectionWithTitles>
