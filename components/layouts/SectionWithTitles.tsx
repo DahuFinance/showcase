@@ -9,6 +9,7 @@ interface Props {
     subTitleColor?: SubTitleColor;
 
     children: any;
+    disabledFullScreen?:boolean
     bodyClassName?: string
     className?: string;
 }
@@ -23,13 +24,14 @@ export function SectionWithTitles(props: Props) {
         subTitleColor,
 
         children,
-        bodyClassName,
+        disabledFullScreen = false,
+        bodyClassName = '',
         className
     } = props;
 
     return (
         <div className={className + ''}>
-            <div className={bodyClassName + ' p-4 min-h-screen flex flex-col justify-center items-center h-full'}>
+            <div className={`p-4 flex flex-col justify-center items-center h-full ${disabledFullScreen ? '' : 'min-h-screen'}  ` + bodyClassName }>
                 <div className='text-center pb-10'>
                     { typeof title === 'string' ? <Title color={titleColor} title={title}/> : title}
                     {

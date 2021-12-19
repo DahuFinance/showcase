@@ -9,10 +9,10 @@ const Allocation=() => {
         <SectionWithTitles
             title={'Allocation'}
             titleColor={'purple'}
-            bodyClassName={'bg-bg2 bg-cover'}
+            bodyClassName={'md:bg-bg2 bg-cover'}
         >
             <LayoutBorder>
-                <div className="grid grid-cols-none lg:grid-cols-2 grid-rows-2 lg:grid-rows-none place-content-center place-items-center lg:gap-5">
+                <div className="grid grid-cols-none lg:grid-cols-2 grid-rows-1 lg:grid-rows-none place-content-center place-items-center lg:gap-5">
                     <img src="/allocation.png" alt="cake"/>
 
                     <div>

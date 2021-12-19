@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import LayoutBorder from "../layouts/LayoutBorder";
 import {SectionWithTitles} from "../layouts/SectionWithTitles";
-import {SubTitle} from "../Titles/SubTitle";
 import {Title} from "../Titles/Title";
 
 const Team = () => {
@@ -11,9 +11,10 @@ const Team = () => {
             titleColor={'purple'}
             subtitle={'Join us!'}
         >
-            <LayoutBorder className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:items-center space-y-5 lg:space-y-0">
-                <img src="Team.svg" alt="team"/>
-
+            <LayoutBorder className="grid grid-rows-1 lg:grid-rows-none lg:grid-cols-2 lg:items-center space-y-5 lg:space-y-0">
+               <div className='flex justify-center items-center'>
+                   <Image src="/team.png" width={540} height={500} layout='intrinsic' alt="team"/>
+               </div>
                 <div className={"text-white tracking-wide text-justify  leading-8"}>
                     <Title size={'small'} title={'Discover our team 🐐'}/>
 

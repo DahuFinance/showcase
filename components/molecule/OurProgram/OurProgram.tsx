@@ -37,31 +37,29 @@ export default class OurProgram extends React.Component<any, any> {
             <SectionWithTitles
                 title={'Our Program'}
                 subtitle={"Check the program !"}
-                bodyClassName={'bg-bg1 bg-cover'}
+                bodyClassName={'md:bg-bg1 bg-cover'}
             >
                 <LayoutBorder>
                     <div className='px-4 lg:px-20 xl:px-52 2xl:px-72 text-justify tracking-wide leading-8'>
                         Dahu is proud to present its full program for the upcoming months.
                         Of course, we planned this program by taking into consideration our workforce.
                         We are however on the lookout for new and motivated people to join the team and contribute
-                        to the faster growth of our program! Do not hesitate to take a look at our Github to follow our progress!
+                        to the faster growth of our program! Do not hesitate to take a look at our Github to follow our
+                        progress!
                     </div>
                 </LayoutBorder>
 
                 <div className={"px-4 md:px-20 lg:px-30 xl:px-52 py-10 bg-real-purple-superdark"}>
-                    <div className="flex flex-col">
-                        {this.programs.map((program, i) => {
-                            return (
-                                <ProgramSection
-                                    key={'program-' + i}
-                                    program={program}
-                                    first={i === 0}
-                                    last={i === this.programs.length - 1}
-                                />
-                            )
-                        })
-                        }
-                    </div>
+                    {this.programs.map((program, i) => {
+                        return (
+                            <ProgramSection
+                                key={'program-' + i}
+                                program={program}
+                                first={i === 0}
+                                last={i === this.programs.length - 1}
+                            />
+                        )
+                    })}
                 </div>
             </SectionWithTitles>
         );

@@ -5,7 +5,7 @@ const TokensInfo = () => {
     return (
         <SectionWithTitles
             className={'bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple'}
-            bodyClassName={'bg-bg1 bg-cover bg-opacity-5'}
+            bodyClassName={'md:bg-bg1 bg-cover bg-opacity-5'}
             title={'Ours tokens'}
             subTitleColor={'purple'}
             subtitle={'Catch them !'}

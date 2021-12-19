@@ -14,7 +14,7 @@ export default class ProgramSection extends React.Component<Props, any> {
 
         if (!first && hasYear) {
             return (
-                <div className="mt-10 md:hidden">
+                <div className="md:mt-10 md:hidden">
 
                 </div>
             )
@@ -33,8 +33,7 @@ export default class ProgramSection extends React.Component<Props, any> {
         return (
             <div
                 className={
-                    "grid grid-cols-none md:grid-cols-12 md:grid-rows-none items-center md:pt-0 " +
-                    (program.year ?  (first ? "grid-rows-3" : "grid-rows-4") : 'grid-rows-2')
+                    "grid grid-cols-none md:grid-cols-12 md:grid-rows-none items-center md:pt-0 "
                 }
             >
 

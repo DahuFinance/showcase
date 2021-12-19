@@ -24,7 +24,7 @@ const Header = () => {
                 </a>
             </div>
             <div
-                className='fixed bg-darkPurple bg-opacity-80 backdrop-filter backdrop-blur grid grid-cols-3 gap-2 items-center sm:hidden bottom-0 inset-x-0 h-14'>
+                className='fixed z-20 bg-darkPurple bg-opacity-80 backdrop-filter backdrop-blur grid grid-cols-3 gap-2 items-center sm:hidden bottom-0 inset-x-0 h-14'>
                 <Link href="/">
                     <div className='flex space-y-1 flex-col items-center text-xs justify-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20"

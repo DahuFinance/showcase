@@ -13,8 +13,9 @@ export default function FeaturesInfo(props: Props) {
         {
 
             title: 'FARMING',
+            id: 'farm',
             content: (
-                <div id='farm' className={"flex flex-col md:flex-row"}>
+                <div className={"flex flex-col md:flex-row"}>
                     <div className={"flex md:flex-col "}>
                         <span>
                             Stake your tokens in our eligible farming pools to earn XDAHUs.
@@ -30,8 +31,9 @@ export default function FeaturesInfo(props: Props) {
         },
         {
             title: 'SWAPPING',
+            id: 'swapping',
             content: (
-                <div id='swap' className={"flex flex-col md:flex-row"}>
+                <div className={"flex flex-col md:flex-row"}>
                     <span>
                         Exchange your tokens immediately for minimal fees.
                         Transaction fees: 0.3% (0.25% to the token providers and 0.05% to our stakers).
@@ -42,8 +44,9 @@ export default function FeaturesInfo(props: Props) {
         },
         {
             title: 'STAKING',
+            id: 'staking',
             content: (
-                <div id='stacking' className={"flex flex-col md:flex-row"}>
+                <div className={"flex flex-col md:flex-row"}>
                      <span>
                         Lock your tokens on our platform for the period of time of your choice.
                         The longer you lock them, the more XDAHU you get from the platform.
@@ -55,8 +58,9 @@ export default function FeaturesInfo(props: Props) {
         },
         {
             title: 'CHARITY',
+            id: 'charity',
             content: (
-                <div id='charity' className={"flex flex-col md:flex-row"}>
+                <div  className={"flex flex-col md:flex-row"}>
                      <span>
                         Dahu Finance offers to its users a fund dedicated to solidarity.
                          In order to bring solutions to social and environmental issues,
@@ -74,7 +78,7 @@ export default function FeaturesInfo(props: Props) {
 
 
     const displayItem = (item, index) => (
-        <div key={index} className='border-t-2 p-4 cursor-pointer text-white transition-all duration-300'
+        <div id={item.id} key={index} className='border-t-2 p-4 cursor-pointer text-white transition-all duration-300'
              onClick={() => setOpenIndex(index)}>
             <span className='font-bold text-clearPurple tracking-widest text-2xl'>
                 {item.title}
@@ -90,7 +94,7 @@ export default function FeaturesInfo(props: Props) {
         <SectionWithTitles
             title={'Launching Features'}
             subtitle={'Discover..'}
-            bodyClassName={'bg-bg2 bg-cover'}
+            bodyClassName={'md:bg-bg2 bg-cover'}
         >
             <LayoutBorder>
                 <div className='border-b-2 max-w-[60rem]'>

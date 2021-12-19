@@ -11,30 +11,30 @@ const Features = () => {
             subtitle={'This is just the beginning… '}
         >
             <LayoutBorder className={'md:px-0'}>
-                <div className={'-m-4 flex flex-col flex-wrap justify-center items-center lg:flex-row'}>
+                <div className={'-m-4 flex flex-col items-stretch flex-wrap flex-grow justify-center items-center lg:flex-row'}>
                     <FeatureCard
                         title={"Swap"}
-                        href='/info#swap'
+                        href='/info#swaping'
                         message={"Instantly exchange your cryptocurrencies for other currencies"}
-                        image={'/swap.svg'}
+                        image={'/features/swapping.png'}
                     />
                     <FeatureCard
                         title={"Farm"}
-                        href='/info#farm'
+                        href='/info#farming'
                         message={"Deposit your tokens in our farming pool and earn rewards."}
-                        image={'/farm.svg'}
+                        image={'/features/farming.png'}
                     />
                     <FeatureCard
                         title={"Stake"}
-                        href='/info#stake'
+                        href='/info#staking'
                         message={"Join the Dahu club and recover part of the platform’s fees."}
-                        image={'/club.svg'}
+                        image={'/features/stacking.png'}
                     />
                     <FeatureCard
                         title={"Donate"}
-                        href='/info#donate'
+                        href='/info#charity'
                         message={"Because it is not always a personal matter, join the solidarity fund!"}
-                        image={'/charity.svg'}
+                        image={'/features/charity.png'}
                     />
                 </div>
             </LayoutBorder>
