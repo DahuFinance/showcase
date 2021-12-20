@@ -28,6 +28,8 @@ jobs:
       - run: sudo apt update && sudo apt install -y xsel
       - run: yarn deploy
         env:
+          IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.PINATA_KEY }}
+          IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.PINATA_SECRET_KEY }}
           IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           IPFS_DEPLOY_CLOUDFLARE__ZONE: ${{ secrets.CF_ZONE }}
           IPFS_DEPLOY_CLOUDFLARE__RECORD: ${{ secrets.CF_RECORD }}

@@ -5,7 +5,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "deploy": "yarn build && yarn export && ipfs-deploy ./out --dns cloudflare -p infura -O"
+    "deploy": "yarn build && yarn export && ipfs-deploy ./out --dns cloudflare -p infura -p pinata -O"
   },
   "dependencies": {
     "ipfs-deploy": "^11.1.0",
