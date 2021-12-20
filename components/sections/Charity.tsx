@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import LayoutBorder from "../layouts/LayoutBorder";
 
-import together from '../../public/together.svg'
 import {SectionWithTitles} from "../layouts/SectionWithTitles";
 import {Title} from "../Titles/Title";
 
@@ -14,7 +13,7 @@ const Charity = () => {
             bodyClassName={'md:bg-bg2 bg-cover'}
         >
             <LayoutBorder className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-3 lg:items-center space-y-5 lg:space-y-0 lg:gap-5'}>
-                <Image src={together} alt="charity"/>
+                <Image src={'/together.svg'} alt="charity"/>
                 <div className={"lg:col-span-2"}>
                     <Title size='small' title={"THE BEST PART OF YOURSELF!"}/>
                     <div className={"font-medium tracking-wide text-gray-300 text-lg leading-8"}>

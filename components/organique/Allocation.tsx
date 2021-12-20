@@ -1,6 +1,5 @@
 import {SectionWithTitles} from "../layouts/SectionWithTitles";
 import LayoutBorder from "../layouts/LayoutBorder";
-import {SubTitleText} from "../Titles/SubTitleText";
 import {Title} from "../Titles/Title";
 
 
