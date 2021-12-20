@@ -10,7 +10,7 @@ export default class OurProgram extends React.Component<any, any> {
             year: 2022,
             quarter: 1,
             title: 'Bonds',
-            description: 'Sell assets to the DahuFinance protocol en exchange for Dahu at a discounted rate'
+            description: 'Sell assets to the DahuFinance protocol in exchange for Dahu at a discounted rate'
         },
         {
             year: null,

@@ -13,7 +13,7 @@ export default function FeaturesInfo(props: Props) {
         {
 
             title: 'FARMING',
-            id: 'farm',
+            id: 'farming',
             content: (
                 <div className={"flex flex-col md:flex-row"}>
                     <div className={"flex md:flex-col "}>
