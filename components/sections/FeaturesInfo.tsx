@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import LayoutBorder from "../layouts/LayoutBorder";
 import {SectionWithTitles} from "../layouts/SectionWithTitles";
 
@@ -76,10 +76,25 @@ export default function FeaturesInfo(props: Props) {
         }
     ]
 
+    useEffect(() => {
+        const hash = window.location.hash.substring(1);
+
+        if (hash) {
+            const featureIndex = features.findIndex((feature) => feature.id == hash)
+
+            if (featureIndex !== -1) {
+                setOpenIndex(featureIndex)
+            }
+        }
+    })
 
     const displayItem = (item, index) => (
         <div id={item.id} key={index} className='border-t-2 p-4 cursor-pointer text-white transition-all duration-300'
-             onClick={() => setOpenIndex(index)}>
+             onClick={(e) => {
+                 e.preventDefault();
+                 history.pushState({}, '', `#${item.id}`)
+                 setOpenIndex(index)
+             }}>
             <span className='font-bold text-clearPurple tracking-widest text-2xl'>
                 {item.title}
             </span>

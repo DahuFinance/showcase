@@ -3,4 +3,6 @@
 
 html {
     @apply text-gray-200;
+    scroll-behavior: smooth;
+    scroll-margin-top: 20px;
 }
