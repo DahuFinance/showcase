@@ -27,14 +27,14 @@ export default function Home() {
                 <meta property="og:url" content="https://dahu.finance/"/>
                 <meta property="og:title" content="Dahu Finance | Home"/>
                 <meta property="og:description" content="Dahu Finance 🐐 is an all-in-one solution to provide you innovative services around decentralized finance on $AVAX "/>
-                <meta property="og:image" content="https://dahu.finance/previews/home.png"/>
+                <meta property="og:image" content="https://dahu.finance/previews/home.jpg"/>
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://dahu.finance/"/>
                 <meta property="twitter:title" content="Dahu Finance | Home"/>
                 <meta property="twitter:description" content="Dahu Finance 🐐 is an all-in-one solution to provide you innovative services around decentralized finance on $AVAX "/>
-                <meta property="twitter:image" content="https://dahu.finance/previews/home.png"/>
+                <meta property="twitter:image" content="https://dahu.finance/previews/home.jpg"/>
             </Head>
             <Nav/>
             <main>
