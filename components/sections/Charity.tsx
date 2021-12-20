@@ -8,7 +8,7 @@ const Charity = () => {
         <SectionWithTitles
             title={"Because we are all together"}
             titleColor={'purple'}
-            subtitle={"Donate !"}
+            subtitle={"Donate!"}
             bodyClassName={'md:bg-bg2 bg-cover'}
         >
             <LayoutBorder className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-3 lg:items-center space-y-5 lg:space-y-0 lg:gap-5'}>

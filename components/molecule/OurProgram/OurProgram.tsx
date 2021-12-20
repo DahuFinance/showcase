@@ -36,7 +36,7 @@ export default class OurProgram extends React.Component<any, any> {
         return (
             <SectionWithTitles
                 title={'Our Program'}
-                subtitle={"Check the program !"}
+                subtitle={"Check the program!"}
                 bodyClassName={'md:bg-bg1 bg-cover'}
             >
                 <LayoutBorder>

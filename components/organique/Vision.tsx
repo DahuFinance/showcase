@@ -5,7 +5,7 @@ import {SectionWithTitles} from "../layouts/SectionWithTitles";
 const Vision=() => {
     return(
         <SectionWithTitles
-            title={'The best is yet to come !'}
+            title={'The best is yet to come!'}
             titleColor={'purple'}
         >
             <LayoutBorder className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2'}>

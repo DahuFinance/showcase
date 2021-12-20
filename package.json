@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "export": "next export",
     "start": "next start",
     "deploy": "yarn build && yarn export && ipfs-deploy -d cloudflare -p infura ./out"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/react": "^17.0.37",
     "autoprefixer": "^10.2.6",
+    "next-sitemap": "^1.6.203",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4",
     "tailwindcss-textshadow": "^2.1.3",

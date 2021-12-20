@@ -19,7 +19,7 @@ const Allocation=() => {
                         <div className="font-medium tracking-wide text-gray-300 leading-8 text-lg ">
                             <ul className='list-disc mt-5 space-y-5'>
                                 <li>
-                                    15% for the foundation with which the salaries of our full-time team on the project are included, but also the salaries of our contributors, such as translators and moderators.
+                                    15% for the foundation in which the salaries of our full-time team on the project are included, but also the salaries of our contributors, such as translators and moderators.
                                     Also planned for is the budget allocated to upcoming security audits.
                                 </li>
                                 <li>

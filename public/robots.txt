@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dahu.finance
+
+# Sitemaps
+Sitemap: https://dahu.finance/sitemap.xml
