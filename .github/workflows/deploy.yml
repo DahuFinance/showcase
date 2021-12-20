@@ -28,6 +28,9 @@ jobs:
       - run: sudo apt update && sudo apt install -y xsel
       - run: yarn deploy
         env:
+          IPFS_DEPLOY_IPFS_CLUSTER__HOST: ${{ secrets.IPFS_CLUSTER_HOST }}
+          IPFS_DEPLOY_IPFS_CLUSTER__USERNAME: ${{ secrets.IPFS_CLUSTER_USERNAME }}
+          IPFS_DEPLOY_IPFS_CLUSTER__PASSWORD: ${{ secrets.IPFS_CLUSTER_PASSWORD }}
           IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.PINATA_KEY }}
           IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.PINATA_SECRET_KEY }}
           IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.CF_API_TOKEN }}

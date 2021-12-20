@@ -6,7 +6,7 @@
     "postbuild": "next-sitemap",
     "export": "next export",
     "start": "next start",
-    "deploy": "yarn build && yarn export && ipfs-deploy -d cloudflare -p infura ./out"
+    "deploy": "yarn build && yarn export && ipfs-deploy -d cloudflare -p ipfs-cluster -p infura ./out"
   },
   "dependencies": {
     "next": "^12.0.7",
