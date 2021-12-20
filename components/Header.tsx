@@ -1,5 +1,5 @@
 import {ButtonDark} from './ButtonDark'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Header = () => {
     return (
