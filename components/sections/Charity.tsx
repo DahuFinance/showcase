@@ -12,7 +12,7 @@ const Charity = () => {
       bodyClassName={'md:bg-bg1 bg-cover'}
     >
       <BorderLayout
-        className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-3 lg:items-center space-y-5 lg:space-y-0 lg:gap-5'}>
+        className={'grid grid-rows-2 justify-items-center lg:grid-rows-none lg:grid-cols-3 lg:items-center space-y-5 lg:space-y-0 lg:gap-5'}>
         <img src={'/together.svg'} alt="charity"/>
         <div className={"lg:col-span-2"}>
           <Title size='small' title={"THE BEST PART OF YOURSELF!"}/>

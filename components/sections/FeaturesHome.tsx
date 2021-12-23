@@ -2,14 +2,14 @@ import FeatureCard from "./FeatureCard";
 import BorderLayout from "../layouts/BorderLayout";
 import {SectionWithTitlesLayout} from "../layouts/SectionWithTitlesLayout";
 
-const Features = () => {
+const FeaturesHome = () => {
   return (
     <SectionWithTitlesLayout
       className={'bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple '}
       title={'Features'}
       subtitle={'This is just the beginning… '}
     >
-      <BorderLayout className={'md:px-0'}>
+      <BorderLayout className={'md:px-0 lg:px-0 py-4 flow-root'}>
         <div className={'-m-4 flex flex-col items-center lg:items-stretch flex-wrap flex-grow justify-center items-center lg:flex-row'}>
           <FeatureCard
             title={"Swap"}
@@ -42,4 +42,4 @@ const Features = () => {
   );
 
 }
-export default Features;
+export default FeaturesHome;

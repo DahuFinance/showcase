@@ -49,14 +49,13 @@ export default class ProgramSection extends React.Component<Props, any> {
           </div>
         </div>
 
-        <div
-          className={"md:col-span-8 min-h-[10rem] px-10 py-4 flex flex-col justify-center"}>
-                    <span className="text-white  text-lg w-full font-semibold">
-                        {program.title}
-                    </span>
+        <div className={"md:col-span-8 min-h-[10rem] px-10 py-4 flex flex-col justify-center"}>
+          <span className="text-white  text-lg w-full font-semibold">
+            {program.title}
+          </span>
           <span className="block text-white leading-8 mt-2">
-                        {program.description}
-                    </span>
+            {program.description}
+          </span>
         </div>
       </div>
     );

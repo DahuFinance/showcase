@@ -52,7 +52,7 @@ export function SectionWithTitlesLayout(props: Props) {
           }
         </div>
 
-        <div className='w-full'>
+        <div className='flex flex-col items-center'>
           {children}
         </div>
       </div>

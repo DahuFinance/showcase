@@ -36,18 +36,19 @@ export default function Panel(
 
     return (
       <div id={card.id} key={index}
-           className={`w-full p-4 text-white transition-all duration-300 ${isLast ? 'border-t-2 border-b-2' : 'border-t-2' }`}>
-            <span
+           className={`w-full text-white transition-all duration-300 ${isLast ? 'border-t-2 border-b-2' : 'border-t-2' }`}>
+            <div
               onClick={(e) => {
                 e.preventDefault();
                 history.pushState({}, '', `#${card.id}`)
                 setOpenIndex(index)
               }}
-              className='font-bold cursor-pointer w-full text-clearPurple tracking-widest text-xl md:text-2xl'>
+              className='p-4 font-bold w-full cursor-pointer text-clearPurple tracking-widest text-xl md:text-2xl'>
                 {card.title}
-            </span>
+            </div>
         <div
-          className={index !== openedIndex ? 'opacity-0 h-0' : '' + ' transition-all w-full duration-1000 mt-2 leading-8'}>
+          onClick={e => e.preventDefault()}
+          className={index !== openedIndex ? 'opacity-0 h-0' : '' + ' p-2 transition-all w-full duration-1000 mt-2 leading-8'}>
           {index === openedIndex && card.content}
         </div>
       </div>
