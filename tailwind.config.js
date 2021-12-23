@@ -6,6 +6,8 @@ module.exports = {
             './components/**/*.{js,ts,jsx,tsx}'
         ],
         safelist: [
+            'border-b-2',
+            'border-t-2',
             'justify-start',
             'justify-end',
             'justify-center',

@@ -32,16 +32,18 @@ export default function Panel(
   })
 
   const renderCard = (card: Card, index) => {
+    const isLast = index === (cards.length - 1)
+
     return (
       <div id={card.id} key={index}
-           className='w-full border-t-2 p-4  text-white transition-all duration-300'>
+           className={`w-full p-4 text-white transition-all duration-300 ${isLast ? 'border-t-2 border-b-2' : 'border-t-2' }`}>
             <span
               onClick={(e) => {
                 e.preventDefault();
                 history.pushState({}, '', `#${card.id}`)
                 setOpenIndex(index)
               }}
-              className='font-bold cursor-pointer w-full text-clearPurple tracking-widest text-2xl'>
+              className='font-bold cursor-pointer w-full text-clearPurple tracking-widest text-xl md:text-2xl'>
                 {card.title}
             </span>
         <div
@@ -53,7 +55,7 @@ export default function Panel(
   }
 
   return (
-    <div className='border-b-2'>
+    <div className='xl:px-32 2xl:px-40'>
       {cards.map((card, index) => renderCard(card, index))}
     </div>
   );

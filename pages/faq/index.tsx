@@ -31,7 +31,7 @@ export default function Faq() {
       id: 'amm',
       content: (
         <span>
-          We are both! More than a simple DEX, more feature will coming soon!
+          We are more than a simple DEX, more feature will coming soon!
           <Link href='/info'>
             <div className='block underline text-blue-500 cursor-pointer'>
               (See our roadmap for more information)
@@ -53,20 +53,12 @@ export default function Faq() {
       )
     },
     {
-      title: 'What is your strategy to maintain the price of your token?',
-      id: 'token-price',
-      content: (
-        <span>
-          ...
-        </span>
-      )
-    },
-    {
-      title: 'How do you guarantee the funds for the charity fund?',
+      title: 'How do you guarantee the donation to the charity fund?',
       id: 'charity-fund',
       content: (
         <span>
-           ...
+           Each donation will be made on the blockchain and will be
+           fully transparent and verifiable with the charity's address.
         </span>
       )
     }
@@ -75,6 +67,7 @@ export default function Faq() {
   return (
     <AppLayout background={'dark'} title='Dahu Finance | FAQ'>
       <SectionWithTitlesLayout
+        bodyClassName='md:bg-bg1 bg-cover'
         justify='start'
         title='FAQ'
       >
