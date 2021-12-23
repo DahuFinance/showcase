@@ -6,6 +6,9 @@ module.exports = {
             './components/**/*.{js,ts,jsx,tsx}'
         ],
         safelist: [
+            'justify-start',
+            'justify-end',
+            'justify-center',
             'from-skyBlue',
             'from-purple'
         ]
