@@ -9,7 +9,7 @@ const Charity = () => {
       title={"Because we are all together"}
       titleColor={'purple'}
       subtitle={"Donate!"}
-      bodyClassName={'md:bg-bg2 bg-cover'}
+      bodyClassName={'md:bg-bg1 bg-cover'}
     >
       <BorderLayout
         className={'grid grid-rows-2 lg:grid-rows-none lg:grid-cols-3 lg:items-center space-y-5 lg:space-y-0 lg:gap-5'}>

@@ -7,7 +7,7 @@ const Allocation = () => {
     <SectionWithTitlesLayout
       title={'Allocation'}
       titleColor={'purple'}
-      bodyClassName={'md:bg-bg2 bg-cover'}
+      bodyClassName={'md:bg-bg1 bg-cover'}
     >
       <BorderLayout>
         <div

@@ -5,14 +5,13 @@ const TokensInfo = () => {
   return (
     <SectionWithTitlesLayout
       className={'bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple'}
-      bodyClassName={'md:bg-bg1 bg-cover bg-opacity-5'}
+      bodyClassName={'md:bg-bg2 bg-cover bg-opacity-5'}
       title={'Ours tokens'}
       subTitleColor={'purple'}
       subtitle={'Catch them!'}
     >
       <BorderLayout>
-
-        <div className=" flex flex-col items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-20 lg:flex-row">
+        <div className=" flex flex-col justify-center items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-20 lg:flex-row">
           <div className="flex flex-col items-center">
             <img src="/neondahu.svg" alt="cake" className="h-44 md:h-72 lg:h-80"/>
             <div
