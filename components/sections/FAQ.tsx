@@ -1,11 +1,9 @@
-import AppLayout from "../../components/layouts/AppLayout";
-import {SectionWithTitlesLayout} from "../../components/layouts/SectionWithTitlesLayout";
-import BorderLayout from "../../components/layouts/BorderLayout";
-import Panel, {Card} from "../../components/atoms/Panel";
-import React from "react";
 import Link from 'next/link'
+import {SectionWithTitlesLayout} from "../layouts/SectionWithTitlesLayout";
+import BorderLayout from "../layouts/BorderLayout";
+import Panel, {Card} from "../atoms/Panel";
 
-export default function Faq() {
+export default function FAQ() {
 
   const faq: Card[] = [
     {
@@ -65,16 +63,14 @@ export default function Faq() {
   ]
 
   return (
-    <AppLayout background={'dark'} title='Dahu Finance | FAQ'>
-      <SectionWithTitlesLayout
-        bodyClassName='md:bg-bg1 bg-cover'
-        justify='start'
-        title='FAQ'
-      >
-        <BorderLayout>
-          <Panel cards={faq}/>
-        </BorderLayout>
-      </SectionWithTitlesLayout>
-    </AppLayout>
+    <SectionWithTitlesLayout
+      className={'bg-gradient-to-r from-darkPurple via-darkBlue to-darkPurple'}
+      bodyClassName='md:bg-bg2 bg-cover'
+      title='FAQ'
+    >
+      <BorderLayout>
+        <Panel cards={faq}/>
+      </BorderLayout>
+    </SectionWithTitlesLayout>
   )
 }
