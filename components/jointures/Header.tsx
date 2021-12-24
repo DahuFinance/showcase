@@ -1,30 +1,33 @@
 import {ButtonDark} from '../atoms/ButtonDark'
 import Link from 'next/link'
-import QuestionIcon from "../icons/QuestionIcon";
 import InformationIcon from "../icons/InformationIcon";
 import HomeIcon from '../icons/HomeIcon';
 import SoonIcon from "../icons/SoonIcon";
+import { useRouter } from 'next/router';
 
 const Header = () => {
+
+  const router = useRouter();
+
   return (
     <div className='flex w-full justify-end'>
       <div className="hidden sm:flex items-center space-x-12 p-4">
         <Link href="/">
           <div
-            className="cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out">
+            className={`
+            cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out
+            ${router.pathname === '/' ? '' : 'opacity-50'}
+            `}>
             Home
           </div>
         </Link>
         <Link href="/info">
           <div
-            className="cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out">
+            className={`
+            cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out
+            ${router.pathname === '/info' ? '' : 'opacity-50'}
+            `}>
             Info
-          </div>
-        </Link>
-        <Link href="/faq">
-          <div
-            className="cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out">
-            FAQ
           </div>
         </Link>
         <a href='#'>
@@ -34,9 +37,12 @@ const Header = () => {
         </a>
       </div>
       <div
-        className='fixed z-20 bg-darkPurple bg-opacity-80 backdrop-filter backdrop-blur grid grid-cols-4 justify-items-stretch gap-2 items-center sm:hidden bottom-0 inset-x-0 h-14'>
+        className='fixed z-20 bg-darkPurple bg-opacity-80  backdrop-blur grid grid-cols-3 justify-items-stretch gap-2 items-center sm:hidden bottom-0 inset-x-0 h-14'>
         <Link href="/">
-          <div className='flex space-y-1 flex-col items-center text-xs justify-center'>
+          <div className={`
+          flex space-y-1 flex-col items-center text-xs justify-center
+          ${router.pathname === '/' ? '' : 'opacity-50'}
+          `}>
             <HomeIcon/>
             <span>
               Home
@@ -44,23 +50,18 @@ const Header = () => {
           </div>
         </Link>
         <Link href="/info">
-          <div className='flex space-y-1 flex-col items-center text-xs justify-center'>
+          <div className={`
+          flex space-y-1 flex-col items-center text-xs justify-center
+          ${router.pathname === '/info' ? '' : 'opacity-50'}
+          `}>
             <InformationIcon/>
             <span>
               Info
             </span>
           </div>
         </Link>
-        <Link href="/faq">
-          <div className='flex space-y-1 flex-col items-center text-xs justify-center'>
-            <QuestionIcon/>
-            <span>
-              FAQ
-            </span>
-          </div>
-        </Link>
         <a href='#'>
-          <div className='flex space-y-1 flex-col items-center text-xs justify-center'>
+          <div className='flex space-y-1 flex-col items-center text-xs justify-center opacity-50'>
             <SoonIcon/>
             <span>
               Soon...
