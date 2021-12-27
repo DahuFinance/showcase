@@ -5,6 +5,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "export": "next export",
+    "postexport": "mv out/404/index.html out/ipfs-404.html",
     "start": "next start",
     "deploy": "NODE_ENV=production yarn build && yarn export && ipfs-deploy ./out -d cloudflare -p infura -O"
   },
