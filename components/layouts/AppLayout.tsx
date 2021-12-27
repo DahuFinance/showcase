@@ -29,13 +29,14 @@ export default function AppLayout(
     <div
       className={`flex flex-col min-h-screen ${backgroundClassName}`}>
       <Head>
+
         <title>{title}</title>
 
         {/* Primary */}
         <meta name="description"
-              content="Dahu Finance 🐐 is an all-in-one solution to provide you innovative services around decentralized finance on $AVAX "/>
+              content="Dahu Finance 🐐 is an all-in-one solution to provide you innovative services around decentralized finance on $AVAX"/>
         <meta name="keywords"
-              content="DahuFinance, Dahu, Defi, AMM, DEX, Avax, Avalanche, Swap, Farm, Stake, Compound"/>
+              content="Dahu, DAHU, DahuFinance, Dahu Finance, Finance, Defi, AMM, DEX, Avax, AVAX, Avalanche, Swap, Farm, Stake, Compound"/>
         <meta name="author" content="DahuFinance"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 

@@ -4,7 +4,8 @@ import React, {ReactNode, useEffect, useState} from "react";
 export interface Card {
   title: string;
   id: string;
-  content: ReactNode
+  content?: string;
+  render?: (card: Card) => ReactNode;
 }
 
 interface Props {
@@ -35,9 +36,10 @@ export default function Panel(
     const isLast = index === (cards.length - 1)
 
     return (
-      <div id={card.id} key={index}
-           className={`w-full text-white ${isLast ? 'border-t-2 border-b-2' : 'border-t-2'}`}>
-        <div
+      <div
+        id={card.id} key={index}
+        className={`w-full text-white ${isLast ? 'border-t-2 border-b-2' : 'border-t-2'}`}>
+        <h2
           onClick={(e) => {
             e.preventDefault();
             history.pushState({}, '', `#${card.id}`)
@@ -45,12 +47,16 @@ export default function Panel(
           }}
           className='p-4 font-bold w-full cursor-pointer text-clearPurple tracking-widest text-xl md:text-2xl'>
           {card.title}
-        </div>
+        </h2>
         <div className={index === openedIndex ? 'px-4 pb-4' : ''}>
           <div
             onClick={e => e.preventDefault()}
             className={index !== openedIndex ? 'opacity-0 h-0' : '' + 'transition-all duration-1000 leading-8'}>
-            {index === openedIndex && card.content}
+            {index === openedIndex && (
+              <>
+                {card.render ? card.render(card) : card.content}
+              </>
+            )}
           </div>
         </div>
       </div>
