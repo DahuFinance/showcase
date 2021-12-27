@@ -9,7 +9,7 @@ import FAQ from "../../components/sections/FAQ";
 
 export default function Index() {
   return (
-    <AppLayout background={'dark'} title='Dahu Finance | Info'>
+    <AppLayout background={'dark'} title='DahuFinance | Info'>
       <InfoHeader/>
       <OurProgram/>
       <FeaturesInfo/>

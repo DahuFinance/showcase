@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {ReactNode} from "react";
 import Header from "../jointures/Header";
 import Footer from "../jointures/Footer";
+import SEO from "../SEO";
 
 interface Props {
   title: string;
@@ -45,6 +46,7 @@ export default function AppLayout(
 
       <Header/>
       <main>
+        <SEO/>
         {children}
       </main>
       <Footer/>
