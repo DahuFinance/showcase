@@ -39,7 +39,7 @@ export default function Panel(
       <div
         id={card.id} key={index}
         className={`w-full text-white ${isLast ? 'border-t-2 border-b-2' : 'border-t-2'}`}>
-        <h2
+        <div
           onClick={(e) => {
             e.preventDefault();
             history.pushState({}, '', `#${card.id}`)
@@ -47,7 +47,7 @@ export default function Panel(
           }}
           className='p-4 font-bold w-full cursor-pointer text-clearPurple tracking-widest text-xl md:text-2xl'>
           {card.title}
-        </h2>
+        </div>
         <div className={index === openedIndex ? 'px-4 pb-4' : ''}>
           <div
             onClick={e => e.preventDefault()}

@@ -1,6 +1,7 @@
 import {SectionWithTitlesLayout} from "../layouts/SectionWithTitlesLayout";
 import BorderLayout from "../layouts/BorderLayout";
 import {Title} from "../atoms/Titles/Title";
+import Image from 'next/image'
 
 const Allocation = () => {
   return (
@@ -12,7 +13,7 @@ const Allocation = () => {
       <BorderLayout>
         <div
           className="grid grid-cols-none lg:grid-cols-2 grid-rows-1 lg:grid-rows-none place-content-center place-items-center lg:gap-5">
-          <img src="/allocation.png" alt="cake"/>
+          <Image src="/allocation.png" width={600} height={368} layout={'intrinsic'} alt="cake"/>
 
           <div>
             <Title size='extra-small' title={" Dahu Finance plans its token distribution as follows:"}/>
