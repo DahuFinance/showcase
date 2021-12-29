@@ -14,21 +14,21 @@ const HomeHeader = () => {
             </div>
             <div className={"flex md:flex-row lg:ml-10 self-center gap-10 mt-4"}>
               <a rel="noopener" target='_blank' href='https://medium.com/@DahuFinance'>
-                <img src={"/medium.svg"} alt={"icone-twitter"}
+                <img src={"/socials/medium.svg"} alt={"icone-twitter"}
                      className={"h-16 shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 mb-4 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200"}/>
               </a>
               <a rel="noopener" target='_blank' href='https://twitter.com/dahufinance'
                  className={'flex space-x-2 items-center self-start'}>
-                <img src={"/twitter.svg"} alt={"icone-twitter"}
+                <img src={"/socials/twitter.svg"} alt={"icone-twitter"}
                      className={"h-16 shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 mb-4 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200"}/>
               </a>
               <a rel="noopener" target='_blank' href='https://t.me/dahufinance' className={'flex space-x-2 items-center self-start'}>
-                <img src={"/telegram.svg"} alt={"icone-twitter"}
+                <img src={"/socials/telegram.svg"} alt={"icone-twitter"}
                      className={"h-16 shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 mb-4 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200"}/>
               </a>
               <a rel="noopener" target='_blank' href='https://github.com/dahufinance'
                  className={'flex space-x-2 items-center self-start'}>
-                <img src={"/github.svg"} alt={"icone-twitter"}
+                <img src={"/socials/github.svg"} alt={"icone-twitter"}
                      className={"h-16 shadow-halo md:hover:scale-105 md:transition md:ease-in-out md:duration-200 mb-4 lg:hover:scale-110 lg:transition lg:ease-in-out lg:duration-200"}/>
               </a>
             </div>

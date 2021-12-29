@@ -13,7 +13,7 @@ const TokensInfo = () => {
       <BorderLayout>
         <div className=" flex flex-col justify-center items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-20 lg:flex-row">
           <div className="flex flex-col items-center">
-            <img src="/neondahu.svg" alt="cake" className="h-44 md:h-72 lg:h-80"/>
+            <img src="/tokens/dahu-neon.svg" alt="Dahu Neon" className="h-44 md:h-72 lg:h-80"/>
             <div
               className={"text-2xl sm:text-3xl md:text-4xl md:text-4xl p-2 font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-purple to-skyBlue"}>DAHU
             </div>
@@ -24,7 +24,7 @@ const TokensInfo = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/neonxdahu.svg" alt="cake" className="h-44 md:h-72 lg:h-80"/>
+            <img src="/tokens/xdahu-neon.svg" alt="XDahu Neon" className="h-44 md:h-72 lg:h-80"/>
             <div
               className={" text-2xl sm:text-3xl md:text-4xl md:text-4xl p-2 font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-yellow to-orange"}>XDAHU
             </div>

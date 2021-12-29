@@ -8,13 +8,19 @@ export default class OurProgram extends React.Component<any, any> {
   programs = [
     {
       year: 2022,
-      quarter: 1,
+      quarter: '🚀',
+      title: 'Launching features',
+      description: 'Farming, Compound, Swapping, Staking, Charity'
+    },
+    {
+      year: null,
+      quarter: 'Q1',
       title: 'Bonds',
       description: 'Sell assets to the DahuFinance protocol in exchange for Dahu at a discounted rate'
     },
     {
       year: null,
-      quarter: 2,
+      quarter: 'Q2',
       title: 'Lending borrowing',
       description: 'Securely lend and borrow tokens with one click'
     },

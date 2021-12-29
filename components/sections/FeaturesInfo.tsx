@@ -19,7 +19,7 @@ export default function FeaturesInfo() {
                 to automatically reinvest your earned interests.
             </span>
           </div>
-          <img src="/farming-icone.svg" alt="team" className="h-28"/>
+          <img src="/icons/farming.svg" alt="team" className="h-28"/>
         </div>
       )
     },
@@ -32,7 +32,7 @@ export default function FeaturesInfo() {
               Exchange your tokens immediately for minimal fees.
               Transaction fees: 0.3% (0.25% to the token providers and 0.05% to our stakers).
           </span>
-          <img src="/swapping-icone.svg" alt="team" className=" h-28"/>
+          <img src="/icons/swapping.svg" alt="team" className=" h-28"/>
         </div>
       )
     },
@@ -46,7 +46,7 @@ export default function FeaturesInfo() {
               The longer you lock them, the more XDAHU you get from the platform.
               These XDAHUs will allow you to earn the platform's fees and vote for its development.
           </span>
-          <img src="/staking-icone.svg" alt="team" className="  h-28"/>
+          <img src="/icons/staking.svg" alt="team" className="  h-28"/>
         </div>
       )
     },
@@ -64,7 +64,7 @@ export default function FeaturesInfo() {
                To spur our community into action, we will introduce
                a leaderboard and our top donors will be rewarded.
           </span>
-          <img src="/charity-icone.svg" alt="team" className=" h-28"/>
+          <img src="/icons/charity.svg" alt="team" className=" h-28"/>
         </div>
       )
     }

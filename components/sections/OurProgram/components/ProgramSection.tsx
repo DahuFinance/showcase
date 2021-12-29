@@ -41,8 +41,10 @@ export default class ProgramSection extends React.Component<Props, any> {
             {first ? <div className={'flex-1'}/> : <div className="hidden md:block border border-purple flex-1 w-0"/>}
 
             <div
-              className="flex items-center justify-center border-2 border-purple w-20 h-20 font-bold rounded-full text-clearPurple text-3xl">
-              Q{program.quarter}
+              className="flex items-center justify-center border-2 border-purple w-20 h-20 font-bold rounded-full text-3xl">
+              <span className='text-transparent bg-clip-text bg-gradient-to-br from-purple via-clearPurple to-white'>
+                {program.quarter}
+              </span>
             </div>
 
             {last ? <div className={'flex-1'}/> : <div className="hidden md:block border border-purple flex-1 w-0"/>}

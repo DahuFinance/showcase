@@ -36,11 +36,11 @@ module.exports = {
                 sans: 'Poppins, sans-serif',
             },
             backgroundImage: {
-                'dahu': "url('/dahu-launch.svg')",
-                'dahuMobile': "url('/dahu-launch-mobile.png')",
-                'stars':"url('/background.png')",
-                'bg1':"url('/bg1.svg')",
-                'bg2':"url('/bg2.svg')"
+                'dahu': "url('/backgrounds/launch.svg')",
+                'dahuMobile': "url('/backgrounds/launch-mob.png')",
+                'stars':"url('/backgrounds/stars.png')",
+                'bg1':"url('/backgrounds/dots1.svg')",
+                'bg2':"url('/backgrounds/dots2.svg')"
             }
         },
     },
