@@ -8,6 +8,7 @@ export default function FeaturesInfo() {
     {
 
       title: 'FARMING',
+      subtitle: '',
       id: 'farming',
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
@@ -25,6 +26,7 @@ export default function FeaturesInfo() {
     },
     {
       title: 'SWAPPING',
+      subtitle: '',
       id: 'swapping',
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
@@ -38,6 +40,7 @@ export default function FeaturesInfo() {
     },
     {
       title: 'STAKING',
+      subtitle: '',
       id: 'staking',
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
@@ -50,8 +53,87 @@ export default function FeaturesInfo() {
         </div>
       )
     },
+      {
+          title: 'NOTIFICATION SERVICE',
+          subtitle: 'Coming soon',
+          id: 'Notification services',
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
+      {
+          title: 'BONDS',
+          subtitle: 'Coming soon',
+          id: 'Bonds',
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
+      {
+          title: 'LENDING BORROWING',
+          subtitle: 'Coming soon',
+          id: 'Lending',
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
+      {
+          title: 'OPTIMIZED STABLE POOL',
+          subtitle: 'Coming soon',
+          id: 'Stable',
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
+      {
+          title: 'GOVERNANCE',
+          subtitle: 'Coming soon',
+          id: 'Governance',
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
+      {
+          title: 'HUB INNOVATION',
+          subtitle: 'Coming soon',
+          id: 'Hub',
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
     {
       title: 'CHARITY',
+      subtitle: '',
       id: 'charity',
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
@@ -72,7 +154,7 @@ export default function FeaturesInfo() {
 
   return (
     <SectionWithTitlesLayout
-      title={'Launching Features'}
+      title={'Features'}
       subtitle={'Discover..'}
       bodyClassName={'md:bg-bg2 bg-cover'}
     >

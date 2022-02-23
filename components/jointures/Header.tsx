@@ -4,13 +4,19 @@ import InformationIcon from "../icons/InformationIcon";
 import HomeIcon from '../icons/HomeIcon';
 import SoonIcon from "../icons/SoonIcon";
 import { useRouter } from 'next/router';
+import Image from "next/image";
 
 const Header = () => {
 
   const router = useRouter();
 
   return (
-    <div className='flex w-full justify-end'>
+
+    <div className='sticky flex z-10 justify-between items-center top-0 w-full bg-darkBlue bg-opacity-50'>
+      <div className='ml-10 justify-start items-center'>
+        <Image src="/dahu.finance-icone.png" width={30} height={30} layout={'intrinsic'} alt="Allocation"/>
+      </div>
+     <div className='justify-end'>
       <div className="hidden sm:flex items-center space-x-12 p-4">
         <Link href="/">
           <div
@@ -36,6 +42,7 @@ const Header = () => {
           </ButtonDark>
         </a>
       </div>
+    </div>
       <div
         className='fixed z-20 bg-darkPurple bg-opacity-80  backdrop-blur grid grid-cols-3 justify-items-stretch gap-2 items-center sm:hidden bottom-0 inset-x-0 h-14'>
         <Link href="/">

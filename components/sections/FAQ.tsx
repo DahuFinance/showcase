@@ -7,17 +7,18 @@ export const faq: Card[] = [
   {
     title: 'When the launch is planned?',
     id: 'launch',
-    content: 'Very soon! In January of 2022.'
+    content: 'The initially planned launch has been postponed. \n' +
+        'We will launch the project at the end of the public sale. Stay tuned!'
   },
   {
     title: 'Is a private sale is scheduled?',
     id: 'private-sale',
-    content: 'No! There will be no private sales, we want to launch the project as fairly as possible.'
+    content: 'YES! Really soon.'
   },
   {
     title: 'Are your an DEX or an AMM?',
     id: 'amm',
-    content: 'We are more than a simple DEX, more feature will coming soon!',
+    content: 'We are more than a simple DEX, DahuFinance is a one stop solution!',
     render: (card) => (
       <span>
           {card.content}

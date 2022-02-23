@@ -3,6 +3,7 @@ import React, {ReactNode, useEffect, useState} from "react";
 
 export interface Card {
   title: string;
+  subtitle: string;
   id: string;
   content?: string;
   render?: (card: Card) => ReactNode;
@@ -47,7 +48,12 @@ export default function Panel(
           }}
           className='p-4 font-bold w-full cursor-pointer text-clearPurple tracking-widest text-xl md:text-2xl'>
           {card.title}
+            <div
+                className='pt-2  w-full cursor-pointer text-red tracking-widest text-sm md:text-sm '>
+                {card.subtitle}
+            </div>
         </div>
+
         <div className={index === openedIndex ? 'px-4 pb-4' : ''}>
           <div
             onClick={e => e.preventDefault()}
