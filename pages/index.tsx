@@ -1,7 +1,7 @@
 import HomeHeader from "../components/sections/HomeHeader";
 import Vision from "../components/sections/Vision";
 import FeaturesHome from "../components/sections/FeaturesHome";
-import TokensHome from "../components/sections/TokensHome";
+import Process from "../components/sections/Process";
 import Team from "../components/sections/Team";
 import Minicard from "../components/sections/Minicard";
 import AppLayout from "../components/layouts/AppLayout";
@@ -34,7 +34,7 @@ export default function Home() {
       <Minicard/>
       <Vision/>
       <FeaturesHome/>
-      <TokensHome/>
+      <Process/>
       <Team/>
     </AppLayout>
   )
