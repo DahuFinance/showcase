@@ -13,8 +13,8 @@ const Process = () => {
     >
       <BorderLayout>
         <div className="flex flex-col items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-20 lg:flex-row">
-          <div className="flex flex-col items-center">
-            <Image src="/ProcessFarming.png" width={2290} height={1302} layout={'intrinsic'} alt="Process farming example"/>
+          <div className="flex flex-col items-center ">
+            <Image src="/ProcessFarming.png" width={1145} height={651} layout={'intrinsic'} alt="Process farming example"/>
           </div>
         </div>
       </BorderLayout>
