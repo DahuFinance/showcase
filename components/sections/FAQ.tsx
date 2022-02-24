@@ -33,7 +33,7 @@ export const faq: Card[] = [
   {
     title: 'Is an airdrop planned, if so when?',
     id: 'airdrop',
-    content: 'At the launch of the platform! In January of 2022.',
+    content: 'At the launch of the platform!',
     render: (card) => (
       <span>
           {card.content}
