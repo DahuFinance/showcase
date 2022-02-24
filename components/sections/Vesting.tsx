@@ -15,7 +15,7 @@ const Vesting = () => {
       <BorderLayout>
         <div className="flex flex-col items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-20 lg:flex-row">
           <div className="flex flex-col items-center ">
-            <Image src="/Vesting.png" width={1138} height={409} layout={'intrinsic'}
+            <Image src="/vesting.png" width={1138} height={409} layout={'intrinsic'}
                    alt="Process farming example"/>
           </div>
         </div>
