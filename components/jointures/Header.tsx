@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className='fixed sm:sticky bottom-0 sm:bottom-auto sm:top-0 flex z-10 justify-between items-center  w-full backdrop-blur bg-darkBlue bg-opacity-50'>
       <div className='hidden sm:block ml-10 justify-start items-center'>
-        <Image src="/dahu.finance-icone.png" width={30} height={30} layout={'intrinsic'} alt="Allocation"/>
+        <Image src="/dahufinance-ico.png" width={30} height={30} layout={'intrinsic'} alt="Allocation"/>
       </div>
       <div className='hidden sm:block justify-end'>
         <div className="hidden sm:flex items-center space-x-12 p-4">
