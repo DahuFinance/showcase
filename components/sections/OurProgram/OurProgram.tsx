@@ -9,33 +9,40 @@ export default class OurProgram extends React.Component<any, any> {
     {
       year: 2022,
       quarter: '🚀',
-      title: 'Launching features',
-      description: 'Farming, Compound, Swapping, Staking, Charity'
+      title: 'Launching platform',
+      description: 'Farming, Compound, Swapping, Staking, Charity / Two interfaces available : Easy - Classic'
     },
     {
       year: null,
       quarter: 'Q1',
-      title: 'Bonds',
-      description: 'Sell assets to the DahuFinance protocol in exchange for Dahu at a discounted rate'
+      title: 'Notification service',
+      description: 'Stay informed of any changes to your current investments with notifications.'
     },
     {
       year: null,
       quarter: 'Q2',
-      title: 'Lending borrowing',
-      description: 'Securely lend and borrow tokens with one click'
+      title: 'Bonds - Lending borrowing',
+      description: 'Sell assets to the DahuFinance protocol in exchange for Dahu at a discounted rate. \n Securely lend and borrow tokens with one click.'
     },
     {
       year: null,
-      quarter: '?',
-      title: 'Stable pools',
-      description: 'Use a stable pool with low fees and low slippage to exchange your stablecoins'
+      quarter: 'Q3',
+      title: 'Optimized stable Pools - Innovation Hub',
+      description: 'Use a stable pool with low fees and low slippage to exchange your stablecoins. \n ' +
+          'Try our DAHU toolbox with some useful feature for every day '
     },
     {
       year: null,
-      quarter: '?',
+      quarter: 'Q4',
       title: 'Governance',
-      description: 'Vote or make a proposal with your xDahu to control the DahuFinance protocol '
-    }
+      description: 'Vote or make a proposal with your xDahu to control the DahuFinance protocol. '
+    },
+    {
+      year: 2023,
+      quarter: 'Q1',
+      title: 'Subnet switch',
+      description: 'We will start the switch with a deflationary supply by burning tokens on C-Chain and transfer to our subnet with 1:1 ratio.'
+    },
   ]
 
   render() {

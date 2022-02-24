@@ -6,6 +6,7 @@ import {InfoHeader} from "../../components/sections/InfoHeader";
 import Allocation from "../../components/sections/Allocation";
 import AppLayout from "../../components/layouts/AppLayout";
 import FAQ from "../../components/sections/FAQ";
+import Vesting from "../../components/sections/Vesting";
 
 export default function Index() {
   return (
@@ -16,6 +17,7 @@ export default function Index() {
       <Charity/>
       <TokensInfo/>
       <Allocation/>
+        <Vesting/>
       <FAQ/>
     </AppLayout>
   )

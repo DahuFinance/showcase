@@ -2,23 +2,25 @@ import Image from 'next/image'
 import BorderLayout from "../layouts/BorderLayout";
 import {SectionWithTitlesLayout} from "../layouts/SectionWithTitlesLayout";
 
-const Process = () => {
+const Vesting = () => {
   return (
     <SectionWithTitlesLayout
       disabledFullScreen
-      bodyClassName={'py-20 bg-darkBlue items-center'}
-      title={'Rethink investment steps'}
+      title={''}
+      titleColor={'purple'}
+      bodyClassName={'md:bg-bg1 bg-cover items-center'}
       subTitleColor={'darkBlue'}
-      subtitle={'Discover the Dahu process with Farming example'}
+      subtitle={'Vesting'}
     >
       <BorderLayout>
         <div className="flex flex-col items-center space-y-10 lg:space-y-0 space-x-0 lg:space-x-20 lg:flex-row">
           <div className="flex flex-col items-center ">
-            <Image src="/process-farming.png" width={1145} height={651} layout={'intrinsic'} alt="Process farming example"/>
+            <Image src="/vesting.png" width={1138} height={409} layout={'intrinsic'}
+                   alt="Process farming example"/>
           </div>
         </div>
       </BorderLayout>
     </SectionWithTitlesLayout>
   );
 }
-export default Process;
+export default Vesting;
