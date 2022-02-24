@@ -11,7 +11,7 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <div className='fixed sm:sticky bottom-0 sm:bottom-auto sm:top-0 flex z-10 justify-between items-center  w-full backdrop-blur bg-darkBlue bg-opacity-50'>
+    <div className='fixed sm:sticky bottom-0 sm:bottom-auto sm:top-0 flex z-10 justify-between items-center  w-full backdrop-blur bg-darkBlue bg-opacity-60'>
       <div className='hidden sm:block ml-10 justify-start items-center'>
         <Image src="/dahufinance-ico.png" width={30} height={30} layout={'intrinsic'} alt="Allocation"/>
       </div>

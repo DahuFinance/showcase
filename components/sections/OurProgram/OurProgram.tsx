@@ -16,13 +16,13 @@ export default class OurProgram extends React.Component<any, any> {
       year: null,
       quarter: 'Q1',
       title: 'Notification service',
-      description: 'Stay informed of any changes to your current investments with notifications on the platform'
+      description: 'Stay informed of any changes to your current investments with notifications.'
     },
     {
       year: null,
       quarter: 'Q2',
       title: 'Bonds - Lending borrowing',
-      description: 'Sell assets to the DahuFinance protocol in exchange for Dahu at a discounted rate \n Securely lend and borrow tokens with one click'
+      description: 'Sell assets to the DahuFinance protocol in exchange for Dahu at a discounted rate. \n Securely lend and borrow tokens with one click.'
     },
     {
       year: null,

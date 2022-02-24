@@ -37,8 +37,7 @@ const Allocation = () => {
                   To finance the rapid evolution of our platform and audit our code before launch we allocate <b>4.5%</b>  for a private sale and  <b>5.5%</b>  for a public sale.
                 </li>
                 <li>
-                  Regarding the 67% of tokens planned for liquidity mining and bonds,
-                  we address them to all of you, our future contributors!
+                  Having good liquidity is important, this is why we reserve <b>67%</b> of our supply for liquidity providers and bonds.
                 </li>
               </ul>
             </div>
