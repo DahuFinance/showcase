@@ -6,7 +6,7 @@ const Process = () => {
   return (
     <SectionWithTitlesLayout
       disabledFullScreen
-      bodyClassName={'py-20 bg-darkBlue'}
+      bodyClassName={'py-20 bg-darkBlue items-center'}
       title={'Rethink investment steps'}
       subTitleColor={'darkBlue'}
       subtitle={'Discover the Dahu process with Farming example'}

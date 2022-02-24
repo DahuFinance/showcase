@@ -10,6 +10,7 @@ export default function FeaturesInfo() {
       title: 'FARMING',
       subtitle: '',
       id: 'farming',
+      locked: false,
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
           <div className={"flex md:flex-col "}>
@@ -28,6 +29,7 @@ export default function FeaturesInfo() {
       title: 'SWAPPING',
       subtitle: '',
       id: 'swapping',
+      locked: false,
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
           <span>
@@ -42,6 +44,7 @@ export default function FeaturesInfo() {
       title: 'STAKING',
       subtitle: '',
       id: 'staking',
+      locked: false,
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
            <span>
@@ -53,88 +56,93 @@ export default function FeaturesInfo() {
         </div>
       )
     },
-      {
-          title: 'NOTIFICATION SERVICE',
-          subtitle: 'Coming soon',
-          id: 'Notification services',
-          render: () => (
-              <div className={"flex flex-col md:flex-row"}>
+    {
+      title: 'NOTIFICATION SERVICES',
+      subtitle: 'Coming soon',
+      id: 'notification_services',
+      locked: true,
+      render: () => (
+        <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+        </div>
+      )
+    },
+    {
+      title: 'BONDS',
+      subtitle: 'Coming soon',
+      id: 'bonds',
+      locked: true,
+      render: () => (
+        <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+        </div>
+      )
+    },
+    {
+      title: 'LENDING BORROWING',
+      subtitle: 'Coming soon',
+      id: 'lending',
+      locked: true,
+      render: () => (
+        <div className={"flex flex-col md:flex-row"}>
           <span>
               Coming soon
           </span>
 
-              </div>
-          )
-      },
-      {
-          title: 'BONDS',
-          subtitle: 'Coming soon',
-          id: 'Bonds',
-          render: () => (
-              <div className={"flex flex-col md:flex-row"}>
+        </div>
+      )
+    },
+    {
+      title: 'OPTIMIZED STABLE POOL',
+      subtitle: 'Coming soon',
+      id: 'stable',
+      locked: true,
+      render: () => (
+        <div className={"flex flex-col md:flex-row"}>
           <span>
               Coming soon
           </span>
 
-              </div>
-          )
-      },
-      {
-          title: 'LENDING BORROWING',
-          subtitle: 'Coming soon',
-          id: 'Lending',
-          render: () => (
-              <div className={"flex flex-col md:flex-row"}>
+        </div>
+      )
+    },
+    {
+      title: 'GOVERNANCE',
+      subtitle: 'Coming soon',
+      id: 'governance',
+      locked: true,
+      render: () => (
+        <div className={"flex flex-col md:flex-row"}>
           <span>
               Coming soon
           </span>
 
-              </div>
-          )
-      },
-      {
-          title: 'OPTIMIZED STABLE POOL',
-          subtitle: 'Coming soon',
-          id: 'Stable',
-          render: () => (
-              <div className={"flex flex-col md:flex-row"}>
+        </div>
+      )
+    },
+    {
+      title: 'HUB INNOVATION',
+      subtitle: 'Coming soon',
+      id: 'hub',
+      locked: true,
+      render: () => (
+        <div className={"flex flex-col md:flex-row"}>
           <span>
               Coming soon
           </span>
 
-              </div>
-          )
-      },
-      {
-          title: 'GOVERNANCE',
-          subtitle: 'Coming soon',
-          id: 'Governance',
-          render: () => (
-              <div className={"flex flex-col md:flex-row"}>
-          <span>
-              Coming soon
-          </span>
-
-              </div>
-          )
-      },
-      {
-          title: 'HUB INNOVATION',
-          subtitle: 'Coming soon',
-          id: 'Hub',
-          render: () => (
-              <div className={"flex flex-col md:flex-row"}>
-          <span>
-              Coming soon
-          </span>
-
-              </div>
-          )
-      },
+        </div>
+      )
+    },
     {
       title: 'CHARITY',
       subtitle: '',
       id: 'charity',
+      locked: false,
       render: () => (
         <div className={"flex flex-col md:flex-row"}>
            <span>

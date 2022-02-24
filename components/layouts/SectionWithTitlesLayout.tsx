@@ -37,7 +37,7 @@ export function SectionWithTitlesLayout(props: Props) {
   return (
     <div className={`${className}`}>
       <div
-        className={`p-4 flex flex-col justify-${justify} items-center h-full ${disabledFullScreen ? '' : 'min-h-screen'}  ` + bodyClassName}>
+        className={`p-4 flex flex-col justify-${justify} h-full ${disabledFullScreen ? '' : 'min-h-screen'}  ` + bodyClassName}>
         <div className='text-center pb-10'>
           {typeof title === 'string' ? <Title color={titleColor} title={title}/> : title}
           {

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import InformationIcon from "../icons/InformationIcon";
 import HomeIcon from '../icons/HomeIcon';
 import SoonIcon from "../icons/SoonIcon";
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import Image from "next/image";
 
 const Header = () => {
@@ -11,40 +11,39 @@ const Header = () => {
   const router = useRouter();
 
   return (
-
-    <div className='sticky flex z-10 justify-between items-center top-0 w-full bg-darkBlue bg-opacity-50'>
-      <div className='ml-10 justify-start items-center'>
+    <div className='fixed sm:sticky bottom-0 sm:bottom-auto sm:top-0 flex z-10 justify-between items-center  w-full backdrop-blur bg-darkBlue bg-opacity-50'>
+      <div className='hidden sm:block ml-10 justify-start items-center'>
         <Image src="/dahu.finance-icone.png" width={30} height={30} layout={'intrinsic'} alt="Allocation"/>
       </div>
-     <div className='justify-end'>
-      <div className="hidden sm:flex items-center space-x-12 p-4">
-        <Link href="/">
-          <div
-            className={`
+      <div className='hidden sm:block justify-end'>
+        <div className="hidden sm:flex items-center space-x-12 p-4">
+          <Link href="/">
+            <div
+              className={`
             cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out
             ${router.pathname === '/' ? '' : 'opacity-50'}
             `}>
-            Home
-          </div>
-        </Link>
-        <Link href="/info">
-          <div
-            className={`
+              Home
+            </div>
+          </Link>
+          <Link href="/info">
+            <div
+              className={`
             cursor-pointer text-white text-xl active:text-purple hover:border-b-2 transition-all ease-in-out
             ${router.pathname === '/info' ? '' : 'opacity-50'}
             `}>
-            Info
-          </div>
-        </Link>
-        <a href='#'>
-          <ButtonDark>
-            Coming soon
-          </ButtonDark>
-        </a>
+              Info
+            </div>
+          </Link>
+          <a href='#'>
+            <ButtonDark>
+              Coming soon
+            </ButtonDark>
+          </a>
+        </div>
       </div>
-    </div>
       <div
-        className='fixed z-20 bg-darkPurple bg-opacity-80  backdrop-blur grid grid-cols-3 justify-items-stretch gap-2 items-center sm:hidden bottom-0 inset-x-0 h-14'>
+        className='w-full grid grid-cols-3 justify-items-stretch gap-2 items-center sm:hidden  inset-x-0 h-14'>
         <Link href="/">
           <div className={`
           flex space-y-1 flex-col items-center text-xs justify-center
