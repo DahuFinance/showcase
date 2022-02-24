@@ -9,9 +9,6 @@
   <a href="https://twitter.com/dahufinance">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dahufinance?style=social">
   </a>
-  <a href="https://dahu.finance">
-  <img alt="Website" src="https://img.shields.io/website?down_message=Offline&label=Website%20status&up_message=Online&url=https%3A%2F%2Fdahu.finance">
-  </a>
 </p>
 <p align="center">
   <b>Dahu Finance</b> 🐐 is an all-in-one solution to provide you innovative services around decentralized finance on <b>$AVAX</b>
