@@ -14,7 +14,7 @@ const Team = () => {
       <BorderLayout
         className="grid grid-rows-1 lg:grid-rows-none lg:grid-cols-2 lg:items-center space-y-5 lg:space-y-0">
         <div className='flex justify-center items-center'>
-          <Image src="/team.png" width={540} height={500} layout='intrinsic' alt="team"/>
+          <Image src="/team2.png" width={778} height={612} layout='intrinsic' alt="team"/>
         </div>
         <div className={"text-white tracking-wide text-justify  leading-8"}>
           <Title size={'small'} title={'Discover our team 🐐'}/>
