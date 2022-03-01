@@ -34,8 +34,9 @@ export default class OurProgram extends React.Component<any, any> {
     {
       year: null,
       quarter: 'Q4',
-      title: 'Governance',
-      description: 'Vote or make a proposal with your xDahu to control the DahuFinance protocol. '
+      title: 'ETF, farming ETF, Governance',
+      description: 'An ETF is a type of fund that holds multiple underlying assets. Because there are multiple assets within an ETF, they can be a popular choice for diversification.' +
+          ' Vote or make a proposal with your xDahu to control the DahuFinance protocol. '
     },
     {
       year: 2023,

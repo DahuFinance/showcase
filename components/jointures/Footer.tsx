@@ -24,6 +24,9 @@ const Footer = () => {
       <div>
         Copyright © 2021-{currentYear === 2021 ? '2022' : currentYear} Dahu finance
       </div>
+        <div>
+            contact@dahufinance
+        </div>
       <div className='hidden xl:block'>
         Developped by Dahu finance
       </div>

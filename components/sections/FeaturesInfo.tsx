@@ -110,6 +110,20 @@ export default function FeaturesInfo() {
         </div>
       )
     },
+      {
+          title: 'ETF, FARMING ETF',
+          subtitle: 'Coming soon',
+          id: 'ETF',
+          locked: true,
+          render: () => (
+              <div className={"flex flex-col md:flex-row"}>
+          <span>
+              Coming soon
+          </span>
+
+              </div>
+          )
+      },
     {
       title: 'GOVERNANCE',
       subtitle: 'Coming soon',
