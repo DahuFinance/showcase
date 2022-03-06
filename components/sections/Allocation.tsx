@@ -6,6 +6,7 @@ import Image from 'next/image'
 const Allocation = () => {
   return (
     <SectionWithTitlesLayout
+      id='tokenomics'
       title={'Tokenomics'}
       titleColor={'purple'}
       bodyClassName={'md:bg-bg1 bg-cover'}

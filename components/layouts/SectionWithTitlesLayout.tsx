@@ -4,6 +4,7 @@ import {ReactNode} from "react";
 
 interface Props {
   title: string;
+  id?: string;
   titleColor?: BigTitleColor;
 
   subtitle?: string;
@@ -20,6 +21,7 @@ interface Props {
 
 export function SectionWithTitlesLayout(props: Props) {
   const {
+    id,
     title,
     titleColor,
 
@@ -35,7 +37,7 @@ export function SectionWithTitlesLayout(props: Props) {
   } = props;
 
   return (
-    <div className={`${className}`}>
+    <div id={id} className={`${className}`}>
       <div
         className={`p-4 flex flex-col justify-${justify} h-full ${disabledFullScreen ? '' : 'min-h-screen'}  ` + bodyClassName}>
         <div className='text-center pb-10'>
